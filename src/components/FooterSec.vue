@@ -2,8 +2,8 @@
 import SectionContainer from "@/components/SectionContainer.vue";
 </script>
 <template>
-  <SectionContainer class="py-10 lg:py-10 bg-gray-800">
-    <div class="flex flex-col items-center justify-center space-y-5">
+  <SectionContainer class="py-[3.5rem] lg:py-[3.5rem] bg-gray-800">
+    <div class="flex flex-col items-center justify-center space-y-6">
       <a
         aria-current="page"
         class="focus:ring mr-auto mx-auto"
@@ -12,7 +12,7 @@ import SectionContainer from "@/components/SectionContainer.vue";
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 931.42 235.11"
-          class="h-[30px] lg:h-[50px]"
+          class="h-[32px] lg:h-[48px]"
         >
           <path
             d="M39.43 235.11C17.32 235.11 0 217.3 0 194.56v-154C0 17.81 17.32 0 39.43 0a39.7 39.7 0 0 1 4.48.25L169.7 14c18.17 2 32.4 19.72 32.4 40.38v126.39c0 20.66-14.23 38.39-32.4 40.37L43.91 234.86a39.7 39.7 0 0 1-4.48.25zm0-215.87c-11.51 0-20.19 9.16-20.19 21.31v154c0 12.15 8.68 21.31 20.19 21.31a21.57 21.57 0 0 0 2.4-.13L167.61 202c8.27-.9 15.25-10.63 15.25-21.25V54.34c0-10.62-7-20.35-15.25-21.25L41.83 19.37a21.7 21.7 0 0 0-2.4-.13z"

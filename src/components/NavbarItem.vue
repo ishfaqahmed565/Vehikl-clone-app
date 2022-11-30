@@ -11,7 +11,14 @@ let showClose = ref(false);
   >
     <nav class="max-w-6xl h-20 container mx-auto flex items-center">
       <div class="left mr-auto">
-        <LogoItem />
+        <a
+          aria-current="page"
+          class="focus:ring mr-auto"
+          aria-label="Home"
+          href="/"
+        >
+          <img src="@/assets/logo.png" alt="" />
+        </a>
       </div>
       <div class="right">
         <ul class="hidden md:flex space-x-7 text-sm font-bold items-center">

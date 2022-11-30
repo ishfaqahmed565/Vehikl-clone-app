@@ -1,4 +1,5 @@
 <script setup>
+import DynImg from "@/components/DynImg.vue";
 defineProps({ dataSet: Array });
 </script>
 <template>
@@ -8,7 +9,7 @@ defineProps({ dataSet: Array });
       v-for="data in dataSet"
       :key="data.img"
     >
-      <img :src="`/src/assets/${data.img}`" alt="" class="w-[45px]" />
+      <DynImg :imgSrc="data.img" class="w-[45px]" />
       <div
         class="text-white md:font-semibold sm:font-medium text-xs sm:text-sm pl-[3%]"
       >

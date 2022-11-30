@@ -1,11 +1,17 @@
 <script setup>
 import SectionContainer from "@/components/SectionContainer.vue";
-import LogoItem from "@/components/LogoItem.vue";
 </script>
 <template>
   <SectionContainer class="py-[3.5rem] lg:py-[3.5rem] bg-gray-800">
     <div class="flex flex-col items-center justify-center space-y-6">
-      <LogoItem class="mx-auto" />
+      <a
+        aria-current="page"
+        class="focus:ring mx-auto"
+        aria-label="Home"
+        href="/"
+      >
+        <img src="@/assets/logo.png" alt="" />
+      </a>
       <div class="flex flex-row items-center space-x-[1px] text-gray-400">
         <a
           href="https://twitter.com/vehikl"

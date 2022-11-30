@@ -1,6 +1,5 @@
 <script setup>
 import ModalItem from "@/components/ModalItem.vue";
-import LogoItem from "@/components/LogoItem.vue";
 
 import { ref } from "vue";
 let showClose = ref(false);

@@ -6,7 +6,9 @@ let props = defineProps({
   imgSrc: String,
 });
 watchEffect(async () => {
-  src.value = (await import(`../assets/${props.imgSrc}`)).default;
+  src.value = (
+    await import(/* @vite-ignore */ `../assets/${props.imgSrc}`)
+  ).default;
 });
 console.log(props);
 </script>

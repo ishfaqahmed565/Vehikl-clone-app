@@ -47,7 +47,7 @@ let techs = [
   },
   {
     name: "Microsoft.net",
-    img: ".net",
+    img: "net",
     filters: ["backend"],
   },
   {

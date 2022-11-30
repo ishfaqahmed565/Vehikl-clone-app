@@ -3,22 +3,22 @@ import DynImg from "@/components/DynImg.vue";
 let members = [
   {
     name: "Shuvajit Das",
-    role: "Sn. Soft. Engineer",
+    role: "Senior Software Engineer",
     img: "member_6",
   },
   {
     name: "Raihanul Islam Refat",
-    role: "Soft. Engineer ",
+    role: "Software Engineer ",
     img: "member_2",
   },
   {
     name: "Ashiq Zaman",
-    role: "Sn. Soft. Engineer",
+    role: "Senior Software Engineer",
     img: "member_3",
   },
   {
     name: "Mosharaf Hossan",
-    role: "Soft. Engineer ",
+    role: "Software Engineer ",
     img: "member_4",
   },
 ];

@@ -8,17 +8,19 @@ import AdvisorsInfo from "./components/AdvisorsInfo.vue";
 import MeetupsInfo from "./components/MeetupsInfo.vue";
 import CTASec from "./components/CTASec.vue";
 import FooterSec from "./components/FooterSec.vue";
+import TechSec from "./components/TechSec.vue";
+import SolutionsSec from "./components/SolutionsSec.vue";
 </script>
 
 <template>
   <NavbarItem />
   <HeroSec />
   <BusinessInfo />
-  <ClientsInfo />
-  <CommunityInfo />
-  <AdvisorsInfo />
-  <MeetupsInfo />
+  <TechSec />
+  <SolutionsSec />
   <CTASec />
+  <ClientsInfo />
+
   <FooterSec />
 </template>
 

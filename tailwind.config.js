@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#dd5f13",
+        brand: "#FF0101",
+        grayBorder: "#CC1D27",
       },
       fontFamily: {
-        Inter: ["Inter"],
+        inter: ["inter"],
       },
     },
   },

@@ -2,15 +2,16 @@
 import SectionContainer from "@/components/SectionContainer.vue";
 import HeadBorder from "@/components/HeadBorder.vue";
 import { ref, watchEffect } from "vue";
-let props = defineProps({
-  imgSrc: String,
-  order: String,
-});
+
 const src = ref();
 watchEffect(async () => {
   src.value = (
     await import(/* @vite-ignore */ `../assets/${props.imgSrc}.webp`)
   ).default;
+});
+let props = defineProps({
+  imgSrc: String,
+  order: String,
 });
 </script>
 
@@ -20,9 +21,9 @@ watchEffect(async () => {
       <div class="description flex flex-col items-start space-y-3">
         <h2 class="lg:text-3xl text-2xl font-bold text-gray-100">
           <slot name="header"></slot>
+          <HeadBorder />
         </h2>
 
-        <HeadBorder />
         <p class="paragraphStyle">
           <slot name="paragraph"></slot>
         </p>

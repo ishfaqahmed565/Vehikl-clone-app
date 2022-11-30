@@ -1,7 +1,7 @@
 <script setup>
 import SectionContainer from "@/components/SectionContainer.vue";
 import HeadBorder from "@/components/HeadBorder.vue";
-
+import InfoHeader from "@/components/InfoHeader.vue";
 import { ref } from "vue";
 let showClose = ref(false);
 defineProps({
@@ -14,13 +14,13 @@ defineProps({
 <template>
   <SectionContainer :class="extraStyle">
     <div
-      class="text-center max-w-[75ch] mx-auto flex items-center flex-col space-y-4"
+      class="text-center max-w-[100ch] mx-auto flex items-center flex-col space-y-4"
     >
-      <h2 class="text-gray-100 text-3xl lg:text-4xl font-bold">
+      <InfoHeader>
         <slot name="header"></slot>
-      </h2>
-      <HeadBorder />
-      <p class="text-xl lg:text-2xl text-gray-400">
+      </InfoHeader>
+
+      <p class="text-xl lg:text-2xl">
         <slot name="paragraph"></slot>
       </p>
     </div>

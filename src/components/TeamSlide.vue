@@ -23,22 +23,22 @@ export default {
         {
           name: "Shuvajit Das",
           role: "Sn. Soft. Engineer",
-          img: "member_6.png",
+          img: "member_6",
         },
         {
           name: "Raihanul Islam Refat",
           role: "Soft. Engineer ",
-          img: "member_2.png",
+          img: "member_2",
         },
         {
           name: "Ashiq Zaman",
           role: "Sn. Soft. Engineer",
-          img: "member_3.png",
+          img: "member_3",
         },
         {
           name: "Mosharaf Hossan",
           role: "Soft. Engineer ",
-          img: "member_4.png",
+          img: "member_4",
         },
       ],
     };

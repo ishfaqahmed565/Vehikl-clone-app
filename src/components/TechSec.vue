@@ -7,52 +7,52 @@ import { ref } from "vue";
 let techs = [
   {
     name: "Laravel",
-    img: "laravel.png",
+    img: "laravel",
     filters: ["web", "backend"],
   },
   {
     name: "Node.js",
-    img: "nodejs.png",
+    img: "nodejs",
     filters: ["web", "backend"],
   },
   {
     name: "Python",
-    img: "python.png",
+    img: "python",
     filters: ["web", "backend"],
   },
   {
     name: "Java",
-    img: "java.png",
+    img: "java",
     filters: ["web", "backend"],
   },
   {
     name: "php",
-    img: "php.png",
+    img: "php",
     filters: ["web", "backend"],
   },
   {
     name: "React",
-    img: "react.png",
+    img: "react",
     filters: ["web", "mobile"],
   },
   {
     name: "Figma",
-    img: "figma.png",
+    img: "figma",
     filters: ["design"],
   },
   {
     name: "Photoshop",
-    img: "photoshop.png",
+    img: "photoshop",
     filters: ["design"],
   },
   {
     name: "Microsoft.net",
-    img: ".net.png",
+    img: ".net",
     filters: ["backend"],
   },
   {
     name: "Mysql",
-    img: "mysql.png",
+    img: "mysql",
     filters: ["backend"],
   },
 ];

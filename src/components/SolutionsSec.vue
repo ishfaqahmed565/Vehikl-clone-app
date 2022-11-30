@@ -4,51 +4,51 @@ import CommonGrid from "@/components/CommonGrid.vue";
 let solutions = [
   {
     name: "eCommerce",
-    img: "solution_1.png",
+    img: "solution_1",
   },
   {
     name: "Tele Communication",
-    img: "solution_2.png",
+    img: "solution_2",
   },
   {
     name: "Automation",
-    img: "solution_3.png",
+    img: "solution_3",
   },
   {
     name: "Call Center",
-    img: "solution_4.png",
+    img: "solution_4",
   },
   {
     name: "Social Media",
-    img: "solution_5.png",
+    img: "solution_5",
   },
   {
     name: "E-invoice",
-    img: "solution_6.png",
+    img: "solution_6",
   },
   {
     name: "Marketing",
-    img: "solution_7.png",
+    img: "solution_7",
   },
   {
     name: "Banking and Accounting",
-    img: "solution_8.png",
+    img: "solution_8",
   },
   {
     name: "Compliance Solutions",
-    img: "solution_9.png",
+    img: "solution_9",
   },
   {
     name: "HealthCare",
-    img: "solution_11.png",
+    img: "solution_11",
   },
   {
     name: "Manufaturing",
-    img: "solution_12.png",
+    img: "solution_12",
   },
   {
     name: "App Development",
-    img: "solution_3.png",
+    img: "solution_3",
   },
 ];
 </script>

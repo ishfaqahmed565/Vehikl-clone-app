@@ -7,7 +7,7 @@ let props = defineProps({
 });
 watchEffect(async () => {
   src.value = (
-    await import(/* @vite-ignore */ `../assets/${props.imgSrc}`)
+    await import(/* @vite-ignore */ `../assets/${props.imgSrc}.png`)
   ).default;
 });
 console.log(props);

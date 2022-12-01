@@ -77,15 +77,15 @@ export default {
     <swiper-slide>
       <div class="grid md:grid-cols-3 gap-4 grid-rows-2 md:grid-rows-none">
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-8 px-8 items-center justify-center"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-8 px-8 items-center justify-center"
         >
           <InfoHeader>Pixmama</InfoHeader>
           <ButtonItem class="text-center py-2 rounded-sm">Visit</ButtonItem>
         </div>
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-10 px-10 items-center md:col-span-2"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-10 px-10 items-center md:col-span-2"
         >
-          <p class="paragraphStyle">
+          <p class="paragraphStyle text-black">
             Pixmama is the largest digital content platform to source and supply
             Images of Bangladesh. Here at Pixmama, we emphasize to reflect
             diversity of Bangladesh through its people, traditions, culture, and
@@ -99,15 +99,15 @@ export default {
     <swiper-slide>
       <div class="grid md:grid-cols-3 gap-4 grid-rows-2 md:grid-rows-none">
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-8 px-8 items-center justify-center"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-8 px-8 items-center justify-center"
         >
           <InfoHeader>Weecare</InfoHeader>
           <ButtonItem class="text-center py-2 rounded-sm">Visit</ButtonItem>
         </div>
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-10 px-10 items-center md:col-span-2"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-10 px-10 items-center md:col-span-2"
         >
-          <p class="paragraphStyle">
+          <p class="paragraphStyle text-black">
             Weecare is a value-added service designed for the health industry.
             Hospital can sell this value-added service to the patients or their
             family. One of the common issues among patients is that they forget
@@ -119,15 +119,15 @@ export default {
     <swiper-slide>
       <div class="grid md:grid-cols-3 gap-4 grid-rows-2 md:grid-rows-none">
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-8 px-8 items-center justify-center"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-8 px-8 items-center justify-center"
         >
           <InfoHeader>Smartcomm</InfoHeader>
           <ButtonItem class="text-center py-2 rounded-sm">Visit</ButtonItem>
         </div>
         <div
-          class="rounded flex flex-col gap-5 bg-gray-900 py-10 px-10 items-center md:col-span-2"
+          class="rounded flex flex-col gap-5 bg-[#D9D9D9] py-10 px-10 items-center md:col-span-2"
         >
-          <p class="paragraphStyle">
+          <p class="paragraphStyle text-black">
             No more worrying about making calls to potential customers or
             responding to incoming calls from the existing customers. SMARTCOMM
             is capable of providing you with all the necessary and conventional

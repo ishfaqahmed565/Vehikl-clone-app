@@ -3,7 +3,7 @@ import CenterDes from "@/components/CenterDes.vue";
 import ButtonItem from "@/components/ButtonItem.vue";
 </script>
 <template>
-  <CenterDes>
+  <CenterDes class="bg-gradient-t from-brand2 to-brand2">
     <template #header> GET IN TOUCH </template>
     <div class="grid md:grid-cols-2 mt-10 gap-14">
       <div class="grid gap-5 items-center">
@@ -15,17 +15,20 @@ import ButtonItem from "@/components/ButtonItem.vue";
           class="w-full h-[390px] rounded"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <div class="flex bg-gray-900 py-2 gap-4 px-5 items-center rounded">
+        <div class="flex bg-[#8D99AE] py-2 gap-4 px-5 items-center rounded">
           <div class="w-[50px]">
             <img src="@/assets/Vector.png" alt="" class="object-cover" />
           </div>
-          <p class="uppercase text-sm font-thin">
+          <p class="uppercase text-sm font-thin text-white">
             7th Floor, House 01 (Dhaka Square), Road 13 (Jasimuddin Road),
             Sector 01, Uttara, Dhaka-1230, Bangladesh
           </p>
         </div>
       </div>
-      <form action="" class="grid gap-5 bg-gray-900 py-7 px-8 rounded">
+      <form
+        action=""
+        class="grid gap-5 bg-[#8D99AE] py-7 px-8 rounded text-white"
+      >
         <div class="grid gap-2">
           <label for="username" class="text-sm uppercase"
             >Enter your name</label

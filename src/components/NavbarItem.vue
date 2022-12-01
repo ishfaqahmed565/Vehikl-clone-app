@@ -3,10 +3,15 @@ import ModalItem from "@/components/ModalItem.vue";
 
 import { ref } from "vue";
 let showClose = ref(false);
+let nav = ref("home");
+function navLink(navI) {
+  showClose.value = false;
+  nav.value = navI;
+}
 </script>
 <template>
   <div
-    class="bg-black border-b-[2px] border-gray-800 shadow-xl text-gray-200 padding-x sticky"
+    class="bg-[#090E1C] border-b-[2px] border-gray-800 shadow-xl text-gray-200 padding-x sticky"
   >
     <nav class="max-w-6xl h-20 container mx-auto flex items-center">
       <div class="left mr-auto">
@@ -21,24 +26,54 @@ let showClose = ref(false);
       </div>
       <div class="right">
         <ul class="hidden md:flex space-x-7 text-sm font-bold items-center">
-          <li>
-            <a href="#" class="font-semibold text-brand uppercase">Home</a>
+          <li :class="{ actveNavlink: nav === 'home' }">
+            <a
+              href="#home"
+              class="font-semibold uppercase"
+              @click="nav = 'home'"
+              >Home</a
+            >
             <hr
-              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px]"
+              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px] hidden"
             />
           </li>
-          <li>
-            <a href="#" class="uppercase">How we work</a>
+          <li :class="{ actveNavlink: nav === 'services' }">
+            <a href="#services" class="uppercase" @click="nav = 'services'"
+              >Services</a
+            >
+            <hr
+              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px] hidden"
+            />
           </li>
-          <li>
-            <a href="#" class="uppercase">Team</a>
+          <li :class="{ actveNavlink: nav === 'solutions' }">
+            <a href="#solutions" class="uppercase" @click="nav = 'solutions'"
+              >Solutions</a
+            >
+            <hr
+              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px] hidden"
+            />
           </li>
-          <li>
-            <a href="#" class="uppercase">We're hiring</a>
+          <li :class="{ actveNavlink: nav === 'clients' }">
+            <a href="#clients" class="uppercase" @click="nav = 'clients'"
+              >Clients</a
+            >
+            <hr
+              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px] hidden"
+            />
           </li>
-          <li>
+          <li :class="{ actveNavlink: nav === 'products' }">
+            <a href="#products" class="uppercase" @click="nav = 'products'"
+              >Products</a
+            >
+            <hr
+              class="border-t-[3px] mt-[-3px] border-brand rounded-lg relative top-[32px] hidden"
+            />
+          </li>
+          <li :class="{ actveNavlink: nav === 'contact' }">
             <a
               class="uppercase flex items-center gray-border px-3 py-2 hover:border hover:border-brand"
+              href="#contact"
+              @click="nav = 'contact'"
               >Contact
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,10 +93,8 @@ let showClose = ref(false);
             </a>
           </li>
         </ul>
-        <div class="relative lg:hidden">
-          <button
-            class="relative z-50 lg:hidden border rounded border-gray-800 p-1"
-          >
+        <div class="relative md:hidden">
+          <button class="relative z-50 border rounded border-gray-800 p-1">
             <svg
               @click="showClose = true"
               v-show="!showClose"
@@ -96,8 +129,92 @@ let showClose = ref(false);
               />
             </svg>
           </button>
+          <!--Responsive Navbar-->
 
-          <ModalItem :show="showClose" @close="show = false"> </ModalItem>
+          <Transition name="wrapper">
+            <div
+              v-if="showClose"
+              class="modal-mask bg-black bg-opacity-100 opacity-[.9]"
+              @close="show = false"
+            >
+              <SectionContainer class="background-none">
+                <ul class="py-[4.5rem] grid gap-5">
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'home' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('home')"
+                      >Home</a
+                    >
+                    <hr class="border-t-[1.2px] border-gray-800" />
+                  </li>
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'services' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('services')"
+                      >Services</a
+                    >
+                    <hr class="border-t-[1.2px] border-gray-800" />
+                  </li>
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'solutions' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('solutions')"
+                      >Solutions</a
+                    >
+
+                    <hr class="border-t-[1.2px] border-gray-800" />
+                  </li>
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'clients' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('clients')"
+                      >Clients
+                    </a>
+                    <hr class="border-t-[1.2px] border-gray-800" />
+                  </li>
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'Products' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('products')"
+                      >Products</a
+                    >
+                    <hr class="border-t-[1.2px] border-gray-800" />
+                  </li>
+                  <li
+                    class="grid gap-5"
+                    :class="{ actveNavlink: nav === 'contact' }"
+                  >
+                    <a
+                      href="#"
+                      class="text-2xl w-full pl-6"
+                      @click="navLink('contact')"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </SectionContainer>
+            </div>
+          </Transition>
         </div>
       </div>
     </nav>
@@ -109,5 +226,14 @@ let showClose = ref(false);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.actveNavlink {
+  color: #da212a;
+}
+.actveNavlink > hr {
+  display: block;
+}
+.actveNavlink > a {
+  border-color: #da212a;
 }
 </style>

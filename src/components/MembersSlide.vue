@@ -36,7 +36,7 @@ let members = [
 
       <DynImg :imgSrc="member.img" class="z-50 relative" />
       <div class="bg-[#8B0305] px-[1rem] py-4 grid">
-        <span class="uppercase text-[9px] sm:text-[15px]">{{
+        <span class="uppercase text-[9px] sm:text-[15px] text-white">{{
           member.name
         }}</span>
         <span class="text-xs font-thin text-[10px] sm:text-sm text-gray-200">{{

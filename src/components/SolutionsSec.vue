@@ -53,12 +53,14 @@ let solutions = [
 ];
 </script>
 <template>
-  <CenterDes>
+  <CenterDes class="bg-gradient-to-t from-brand2 to-brand2">
     <template v-slot:header>Solutions</template>
     <template v-slot:paragraph>
-      With our specialized solutions, created just to propel them to the top, we
-      assist in revolutionizing industries and transforming them
-      digitally.</template
+      <span class="text-white"
+        >With our specialized solutions, created just to propel them to the top,
+        we assist in revolutionizing industries and transforming them
+        digitally.</span
+      ></template
     >
     <div class="flex flex-col items-center mt-12">
       <CommonGrid :dataSet="solutions" />

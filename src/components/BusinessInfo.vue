@@ -10,61 +10,94 @@ import TeamSection from "@/components/TeamSection.vue";
 </script>
 <template>
   <div>
-    <div class="bg-black pb-10">
+    <div class="bg-none pb-10">
       <ContSec>
         <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 pt-10">
-          <a
-            href="#caring"
-            class="flex flex-col p-5 gray-border items-center justify-between bg-gradient-to-t from-black/[.96] to-black hover:bg-white"
+          <div
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
           >
-            <InfoHeader class="items-center text-base"
-              >Business Growth</InfoHeader
-            >
-
-            <div class="lg:max-w-[290px] max-w-[150px]">
+            <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
               <img src="@/assets/growth.png" alt="" class="object-fit" />
             </div>
-            <p class="paragraphStyle text-center lg:text-start">
-              We maintain our global business standards according to our
-              tried-and-true business methodology.
-            </p>
-          </a>
-          <a
-            href="#growth"
-            class="flex flex-col p-5 gray-border items-center justify-between bg-gradient-to-t from-black/[.96] to-black hover:bg-white"
+            <div class="info flex flex-col items-center lg:items-start gap-2">
+              <div class="flex flex-row items-center">
+                <svg class="h-[2px] w-[40px]">
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="25"
+                    y2="0"
+                    style="stroke: rgba(73, 120, 140, 1); stroke-width: 4"
+                  />
+                </svg>
+                <h2 class="text-brand uppercase text-xl font-bold">
+                  business growth
+                </h2>
+              </div>
+              <p class="paragraphStyle text-center lg:text-start">
+                We maintain our global business standards according to our
+                tried-and-true business methodology.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
           >
-            <InfoHeader class="items-center">Mission</InfoHeader>
-
-            <div class="lg:max-w-[290px] max-w-[150px]">
+            <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
               <img src="@/assets/mission.png" alt="" class="object-fit" />
             </div>
-            <p class="paragraphStyle text-center lg:text-start">
-              Our mission, vision and values are the core foundation of our
-              success and commitment to excellence.
-            </p>
-          </a>
-          <a
-            href="#caring"
-            class="flex flex-col p-5 gray-border items-center justify-between bg-gradient-to-t from-black/[.96] to-black hover:bg-white"
-          >
-            <InfoHeader class="items-center text-base">Our Services</InfoHeader>
-
-            <div class="lg:max-w-[290px] max-w-[150px]">
-              <img
-                src="@/assets/technical_leadership.webp"
-                alt=""
-                class="object-fit"
-              />
+            <div class="info flex flex-col items-center lg:items-start gap-2">
+              <div class="flex flex-row items-center">
+                <svg class="h-[2px] w-[40px]">
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="25"
+                    y2="0"
+                    style="stroke: rgba(73, 120, 140, 1); stroke-width: 4"
+                  />
+                </svg>
+                <h2 class="text-brand uppercase text-xl font-bold">
+                  MISSION, VISION & VALUE
+                </h2>
+              </div>
+              <p class="paragraphStyle text-center lg:text-start">
+                Our mission, vision and values are the core foundation of our
+                success and commitment to excellence.
+              </p>
             </div>
-            <p class="paragraphStyle text-center lg:text-start">
-              Simplified hiring solutions for your everyday business needs.
-              Including virtual assistants.
-            </p>
-          </a>
+          </div>
+          <div
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
+          >
+            <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
+              <img src="@/assets/services.png" alt="" class="object-fit" />
+            </div>
+            <div class="info flex flex-col items-center lg:items-start gap-2">
+              <div class="flex flex-row items-center">
+                <svg class="h-[2px] w-[40px]">
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="25"
+                    y2="0"
+                    style="stroke: rgba(73, 120, 140, 1); stroke-width: 4"
+                  />
+                </svg>
+                <h2 class="text-brand uppercase text-xl font-bold">
+                  OUR Services
+                </h2>
+              </div>
+              <p class="paragraphStyle text-center lg:text-start">
+                Simplified hiring solutions for your everyday business needs.
+                Including virtual assistants.
+              </p>
+            </div>
+          </div>
         </div>
       </ContSec>
     </div>
-    <CenterDes>
+    <CenterDes class="bg-none">
       <template v-slot:header>What we do best </template>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 mt-20">
         <div
@@ -72,7 +105,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_1.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">App Development</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              App Development
+            </h3>
           </div>
           <p class="paragraphStyle">
             Utilizing cutting-edge technologies, like as React, React Native,
@@ -85,7 +120,7 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_2.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">ML & AI</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">ML & AI</h3>
           </div>
           <p class="paragraphStyle">
             In a world full of uncertainties and unexpecting waves, we offers
@@ -98,7 +133,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_3.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">E-commerce</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              E-commerce
+            </h3>
           </div>
           <p class="paragraphStyle">
             We have the knowledge and tools to support your company's marketing
@@ -111,7 +148,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_4.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">Cloud Solution</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              Cloud Solution
+            </h3>
           </div>
           <p class="paragraphStyle">
             Our applications are cutting-edge secure, accessible from any device
@@ -124,7 +163,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_5.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">Banking Solution</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              Banking Solution
+            </h3>
           </div>
           <p class="paragraphStyle">
             By embracing the latest technologies, we build customized banking
@@ -137,7 +178,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_6.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">Digital Content</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              Digital Content
+            </h3>
           </div>
           <p class="paragraphStyle">
             Our service makes it possible to incorporate content into your
@@ -150,7 +193,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_7.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">API DEVELOPMENT</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              API DEVELOPMENT
+            </h3>
           </div>
           <p class="paragraphStyle">
             APIs are carefully developed to guarantee maximum profit and
@@ -162,7 +207,7 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_8.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">
+            <h3 class="text-lg font-semibold uppercase text-black">
               Maintenance & Upgrades
             </h3>
           </div>
@@ -176,7 +221,9 @@ import TeamSection from "@/components/TeamSection.vue";
         >
           <div class="header flex gap-4 items-center">
             <img src="@/assets/App_9.png" alt="" class="w-[45px]" />
-            <h3 class="text-lg font-semibold uppercase">project management</h3>
+            <h3 class="text-lg font-semibold uppercase text-black">
+              project management
+            </h3>
           </div>
           <p class="paragraphStyle">
             You can rely on us to steer your project in the right direction and
@@ -184,7 +231,6 @@ import TeamSection from "@/components/TeamSection.vue";
           </p>
         </div>
       </div>
-      <TeamSection />
     </CenterDes>
   </div>
 </template>

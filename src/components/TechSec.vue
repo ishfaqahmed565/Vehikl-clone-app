@@ -88,7 +88,7 @@ function filteredTech() {
 }
 </script>
 <template>
-  <SectionContainer class="from-white to-white">
+  <SectionContainer class="bg-none">
     <div class="bg-[#f4f4f4] flex flex-col items-center px-2 p-5 gap-10">
       <InfoHeader class="text-[#DA212A]">TECH WE LOVE</InfoHeader>
       <div class="flex gap-2 self-start">

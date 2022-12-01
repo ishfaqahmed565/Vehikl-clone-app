@@ -12,19 +12,21 @@ import TechSec from "./components/TechSec.vue";
 import SolutionsSec from "./components/SolutionsSec.vue";
 import ContactSec from "./components/ContactSec.vue";
 import ProductSec from "./components/ProductSec.vue";
+import TeamSection from "./components/TeamSection.vue";
 </script>
 
 <template>
   <NavbarItem />
-  <HeroSec />
-  <BusinessInfo />
+  <HeroSec id="home" />
+  <BusinessInfo id="services" />
+  <TeamSection />
   <TechSec />
-  <SolutionsSec />
+  <SolutionsSec id="solutions" />
   <CTASec />
 
-  <ClientsInfo />
-  <ContactSec />
-  <ProductSec />
+  <ClientsInfo id="clients" />
+  <ContactSec id="contact" />
+  <ProductSec id="products" />
   <FooterSec />
 </template>
 

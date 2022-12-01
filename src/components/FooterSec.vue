@@ -2,7 +2,7 @@
 import SectionContainer from "@/components/SectionContainer.vue";
 </script>
 <template>
-  <SectionContainer class="py-[3.5rem] lg:py-[3.5rem] bg-gray-800">
+  <SectionContainer class="py-[3.5rem] lg:py-[3.5rem] bg-[#090E1C]">
     <div class="flex flex-col items-center justify-center space-y-6">
       <a
         aria-current="page"

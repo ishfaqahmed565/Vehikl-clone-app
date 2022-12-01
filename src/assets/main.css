@@ -18,7 +18,8 @@
   .paragraphStyle {
     font-size: 1rem; /* 16px */
     line-height: 1.5rem;
-    font-weight: 100
+    font-weight: 100;
+    font-weight:500;
     
   }
   .nuxt-link-active  {
@@ -59,4 +60,7 @@
 }
 .swiper-slide-duplicate{
   padding: 5rem 5rem;
+}
+html {
+  scroll-behavior: smooth;
 }

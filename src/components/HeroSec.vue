@@ -9,18 +9,16 @@ import ContSec from "@/components/ContSec.vue";
     <img
       src="@/assets/candid-9.png"
       alt=""
-      class="w-full object-cover min-h-[90vh] invert"
+      class="w-full object-cover min-h-[90vh]"
     />
-    <div
-      class="absolute bg-gradient-to-t from-black via-gray-900/[.70] to-transparent w-full grid items-center justify-center bg-gray-900 h-full bg-opacity-60"
-    >
+    <div class="absolute w-full grid items-center justify-center h-full">
       <ContSec>
         <div
           class="relative lg:static z-50 lg:grid lg:grid-cols-2 items-center justify-center"
         >
           <div class="description text-center lg:text-start grid gap-8">
             <h1
-              class="text-white text-2xl lg:text-3xl uppercase leading-8 lg:leading-10"
+              class="text-black text-2xl lg:text-3xl uppercase leading-8 lg:leading-10 font-semibold"
             >
               SIGMA SOLUTIONS <br />
               <span class="text-brand text-3xl lg:text-4xl"
@@ -28,7 +26,7 @@ import ContSec from "@/components/ContSec.vue";
               ><br />
               Innovative Concept
             </h1>
-            <p class="paragraphStyle text-white">
+            <p class="paragraphStyle text-black">
               Sigma Solutions is a research and software develop firm that work
               on overcoming most critical challenges and identified problems in
               Bangladesh. Team work is our main strength. Our confronting
@@ -40,7 +38,7 @@ import ContSec from "@/components/ContSec.vue";
             <ButtonItem class="mx-auto lg:mx-0">Work with us</ButtonItem>
           </div>
           <div
-            class="w-[400px] md:w-[450px] lg:w-[500px] absolute z-10 opacity-[.2] position lg:static lg:mx-auto lg:opacity-60 ml-3"
+            class="w-[400px] md:w-[450px] lg:w-[500px] absolute z-10 opacity-[.5] position lg:static lg:mx-auto lg:opacity-60 ml-3"
           >
             <img
               src="@/assets/hero.png"

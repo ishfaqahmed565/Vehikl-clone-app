@@ -22,26 +22,30 @@ import ButtonItem from "@/components/ButtonItem.vue";
         <div class="flex flex-col items-center gap-1">
           <img src="@/assets/step_4.png" alt="" class="w-[50px]" />
           <span class="text-sm text-black font-[500]">Step 1</span>
-          <span class="text-[15px] text-black font-[500]">Make an Inquiry</span>
+          <span class="text-[15px] text-black font-[500] text-center"
+            >Make an Inquiry</span
+          >
         </div>
         <div class="flex flex-col items-center gap-1">
           <img src="@/assets/step_3.png" alt="" class="w-[50px]" />
           <span class="text-sm text-black font-[500]">Step 2</span>
-          <span class="text-[15px] text-black font-[500]"
+          <span class="text-[15px] text-black font-[500] text-center"
             >Take it ahead with manager</span
           >
         </div>
         <div class="flex flex-col items-center gap-1">
           <img src="@/assets/step_2.png" alt="" class="w-[50px]" />
           <span class="text-sm text-black font-[500]">Step 3</span>
-          <span class="text-[15px] text-black font-[500]"
-            >Meet your vrtual staff/team</span
+          <span class="text-[15px] text-black font-[500] text-center"
+            >Meet your virtual team</span
           >
         </div>
         <div class="flex flex-col items-center gap-1">
           <img src="@/assets/step_1.png" alt="" class="w-[50px]" />
           <span class="text-sm text-black font-[500]">Step 4</span>
-          <span class="text-[15px] text-black font-[500]">Get Started</span>
+          <span class="text-[15px] text-black font-[500] text-center"
+            >Get Started</span
+          >
         </div>
       </div>
       <ButtonItem>Let's Talk</ButtonItem>

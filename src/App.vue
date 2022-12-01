@@ -10,6 +10,8 @@ import CTASec from "./components/CTASec.vue";
 import FooterSec from "./components/FooterSec.vue";
 import TechSec from "./components/TechSec.vue";
 import SolutionsSec from "./components/SolutionsSec.vue";
+import ContactSec from "./components/ContactSec.vue";
+import ProductSec from "./components/ProductSec.vue";
 </script>
 
 <template>
@@ -19,8 +21,10 @@ import SolutionsSec from "./components/SolutionsSec.vue";
   <TechSec />
   <SolutionsSec />
   <CTASec />
-  <ClientsInfo />
 
+  <ClientsInfo />
+  <ContactSec />
+  <ProductSec />
   <FooterSec />
 </template>
 

@@ -5,7 +5,7 @@ import ClientsGrid from "@/components/ClientsGrid.vue";
 <template>
   <CenterDes class="bg-none">
     <template v-slot:header
-      ><span class="text-black">Our Clients</span></template
+      ><span class="text-brand">Our Clients</span></template
     >
 
     <ClientsGrid />

@@ -5,7 +5,7 @@ import ButtonItem from "@/components/ButtonItem.vue";
 <template>
   <CenterDes class="bg-none pb-0 lg:pb-0">
     <template v-slot:header
-      ><span class="text-black"
+      ><span class="text-brand"
         >Get Started With US <br />
         Follow A Simple Process!</span
       ></template

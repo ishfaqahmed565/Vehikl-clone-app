@@ -68,7 +68,7 @@ export default {
   >
     <swiper-slide
       ><div
-        class="grid lg:grid-cols-2 gap-5 text-white justify-items-center text-center"
+        class="p grid lg:grid-cols-2 gap-5 text-white justify-items-center text-center"
       >
         <div class="max-w-[250px] sm:max-w-[320px] relative">
           <div
@@ -115,8 +115,7 @@ export default {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;

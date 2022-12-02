@@ -11,10 +11,10 @@ import TeamSection from "@/components/TeamSection.vue";
 <template>
   <div>
     <div class="bg-none pb-10">
-      <ContSec>
-        <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 pt-10">
+      <ContSec class="relative lg:bottom-5">
+        <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 pt-10 lg:pt-0">
           <div
-            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl bg-white"
           >
             <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
               <img src="@/assets/growth.png" alt="" class="object-fit" />
@@ -41,7 +41,7 @@ import TeamSection from "@/components/TeamSection.vue";
             </div>
           </div>
           <div
-            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl bg-white"
           >
             <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
               <img src="@/assets/mission.png" alt="" class="object-fit" />
@@ -68,7 +68,7 @@ import TeamSection from "@/components/TeamSection.vue";
             </div>
           </div>
           <div
-            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl hover:bg-white"
+            class="flex flex-col p-5 border border-gray-300 items-center justify-between shadow-xl bg-white"
           >
             <div class="lg:max-w-[290px] max-w-[200px] z-[1]">
               <img src="@/assets/services.png" alt="" class="object-fit" />
@@ -97,7 +97,7 @@ import TeamSection from "@/components/TeamSection.vue";
         </div>
       </ContSec>
     </div>
-    <CenterDes class="bg-none">
+    <CenterDes class="bg-none lg:pt-0">
       <template v-slot:header>What we do best </template>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 mt-20">
         <div

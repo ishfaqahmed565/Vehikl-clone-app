@@ -153,7 +153,7 @@ export default {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  padding: 5rem 5rem;
+
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;

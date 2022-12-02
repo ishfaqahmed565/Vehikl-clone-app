@@ -9,7 +9,7 @@ import ContSec from "@/components/ContSec.vue";
     <img
       src="@/assets/candid-9.png"
       alt=""
-      class="w-full object-cover min-h-[90vh]"
+      class="w-full object-cover min-h-[110vh]"
     />
     <div class="absolute w-full grid items-center justify-center h-full">
       <ContSec>

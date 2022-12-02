@@ -58,9 +58,7 @@
 .swiper-button-prev::after {
   display: none;
 }
-.swiper-slide-duplicate{
-  padding: 5rem 5rem;
-}
+
 html {
   scroll-behavior: smooth;
 }

@@ -1,17 +1,26 @@
 <script setup>
 import DynImg from "@/components/DynImg.vue";
-defineProps({ dataSet: Array });
+let props = defineProps({
+  dataSet: Array,
+  switch: { type: Boolean, default: false },
+});
 </script>
 <template>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
     <div
-      class="bg-white hover:bg-gray-900/[.70] border border-gray-300 gap-2 w-[150px] sm:w-[200px] py-2 px-2 flex sm:flex-col items-center sm:items-start"
+      class="bg-white border border-gray-300 gap-2 w-[150px] sm:w-[200px] py-2 px-2 flex sm:flex-col items-center sm:items-start"
       v-for="data in dataSet"
+      :class="{
+        'hover:bg-gray-700/[.50] bg-[#22232F] border-gray-900': props.switch,
+      }"
       :key="data.img"
     >
       <DynImg :imgSrc="data.img" class="w-[45px]" />
       <div
         class="text-black md:font-semibold sm:font-medium text-xs sm:text-sm pl-[3%]"
+        :class="{
+          'text-white': props.switch,
+        }"
       >
         {{ data.name }}
       </div>

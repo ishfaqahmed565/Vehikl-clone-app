@@ -63,7 +63,7 @@ let solutions = [
       ></template
     >
     <div class="flex flex-col items-center mt-12">
-      <CommonGrid :dataSet="solutions" />
+      <CommonGrid :dataSet="solutions" :switch="true" />
     </div>
   </CenterDes>
 </template>

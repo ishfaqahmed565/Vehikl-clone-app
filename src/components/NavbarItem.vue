@@ -144,7 +144,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'home' }"
                   >
                     <a
-                      href="#"
+                      href="#home"
                       class="text-2xl w-full pl-6"
                       @click="navLink('home')"
                       >Home</a
@@ -156,7 +156,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'services' }"
                   >
                     <a
-                      href="#"
+                      href="#services"
                       class="text-2xl w-full pl-6"
                       @click="navLink('services')"
                       >Services</a
@@ -168,7 +168,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'solutions' }"
                   >
                     <a
-                      href="#"
+                      href="#solutions"
                       class="text-2xl w-full pl-6"
                       @click="navLink('solutions')"
                       >Solutions</a
@@ -181,7 +181,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'clients' }"
                   >
                     <a
-                      href="#"
+                      href="#clients"
                       class="text-2xl w-full pl-6"
                       @click="navLink('clients')"
                       >Clients
@@ -193,7 +193,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'Products' }"
                   >
                     <a
-                      href="#"
+                      href="#products"
                       class="text-2xl w-full pl-6"
                       @click="navLink('products')"
                       >Products</a
@@ -205,7 +205,7 @@ function navLink(navI) {
                     :class="{ actveNavlink: nav === 'contact' }"
                   >
                     <a
-                      href="#"
+                      href="#contact"
                       class="text-2xl w-full pl-6"
                       @click="navLink('contact')"
                       >Contact</a

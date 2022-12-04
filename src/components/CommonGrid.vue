@@ -8,7 +8,7 @@ let props = defineProps({
 <template>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 w-full">
     <div
-      class="bg-white border border-gray-300 gap-2 w-[150px] w-full py-2 px-2 flex sm:flex-col items-center sm:items-start"
+      class="bg-white border border-gray-300 gap-2 w-full py-2 px-2 flex sm:flex-col items-center sm:items-start"
       v-for="data in dataSet"
       :class="{
         'hover:bg-gray-700/[.50] bg-[#22232F] border-gray-900': props.switch,

@@ -91,7 +91,7 @@ function filteredTech() {
 <template>
   <SectionContainer class="bg-none pt-5 lg:pt-5">
     <div
-      class="bg-[#f4f4f4] flex flex-col items-center px-2 p-5 gap-10 h-[32rem] sm:h-[30rem]"
+      class="bg-[#f4f4f4] flex flex-col items-center px-2 p-5 gap-10 h-[32rem] sm:h-[40rem]"
     >
       <InfoHeader class="text-[#DA212A]">TECH WE LOVE</InfoHeader>
       <div class="flex gap-2 self-start">

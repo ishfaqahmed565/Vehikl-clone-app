@@ -131,6 +131,16 @@ function filteredTech() {
         >
           Back-End
         </button>
+        <button
+          class="px-4 py-1 bg-white text-black rounded border border-gray-400 font-semibold"
+        >
+          Design
+        </button>
+        <button
+          class="px-4 py-1 bg-white text-black rounded border border-gray-400 font-semibold"
+        >
+          Mobile
+        </button>
       </div>
 
       <CommonGrid

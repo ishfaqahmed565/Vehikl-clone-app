@@ -34,7 +34,7 @@ let members = [
         class="hidden sm:block bg-gradient-to-b from-[#8B0305] via-[#8B0305]/[.2] to-[#8B0305]/[.000000000000001] w-[8rem] h-[10rem] sm:w-[11rem] sm:h-[13rem] absolute z-10 top-[-30px] left-[-30px]"
       ></div>
 
-      <DynImg :imgSrc="member.img" class="z-50 relative" />
+      <DynImg :imgSrc="member.img" class="z-50 relative h-full" />
       <div class="bg-[#8B0305] px-[1rem] py-4 grid">
         <span class="uppercase text-[9px] sm:text-[15px] text-white">{{
           member.name

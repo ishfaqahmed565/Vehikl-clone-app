@@ -2,6 +2,7 @@
 import SectionContainer from "@/components/SectionContainer.vue";
 import InfoHeader from "@/components/InfoHeader.vue";
 import CommonGrid from "@/components/CommonGrid.vue";
+import TechsTrans from "@/components/TechsTrans.vue";
 import { ref } from "vue";
 
 let techs = [
@@ -89,7 +90,9 @@ function filteredTech() {
 </script>
 <template>
   <SectionContainer class="bg-none pt-5 lg:pt-5">
-    <div class="bg-[#f4f4f4] flex flex-col items-center px-2 p-5 gap-10">
+    <div
+      class="bg-[#f4f4f4] flex flex-col items-center px-2 p-5 gap-10 h-[32rem] sm:h-[30rem]"
+    >
       <InfoHeader class="text-[#DA212A]">TECH WE LOVE</InfoHeader>
       <div class="flex gap-2 self-start">
         <button
@@ -129,42 +132,61 @@ function filteredTech() {
           Back-End
         </button>
       </div>
-      <Transition
-        enter-from-class=" opacity-0"
-        enter-to-class="opacity-100"
-        enter-active-class="transition duration-1000"
-        leave-active-class="transition duration-100"
-        leave-from-class="opacity-100 "
-        leave-to-class="opacity-0"
-      >
-        <CommonGrid v-if="filter === 'top'" :dataSet="filteredTechArray" />
-      </Transition>
-      <Transition
-        enter-from-class=" opacity-0"
-        enter-to-class="opacity-100"
-        enter-active-class="transition duration-1000"
-        leave-active-class="transition duration-100"
-        leave-from-class="opacity-100 "
-        leave-to-class="opacity-0"
-      >
-        <CommonGrid v-if="filter === 'web'" :dataSet="filteredTechArray" />
-      </Transition>
-      <Transition
-        enter-from-class=" opacity-0"
-        enter-to-class="opacity-100"
-        enter-active-class="transition duration-1000"
-        leave-active-class="transition duration-100"
-        leave-from-class="opacity-100 "
-        leave-to-class="opacity-0"
-      >
-        <CommonGrid v-if="filter === 'backend'" :dataSet="filteredTechArray" />
-      </Transition>
+
+      <CommonGrid
+        :dataSet="filteredTechArray"
+        :class="{ activeTech: filter === 'top', block: filter !== 'top' }"
+      />
+
+      <CommonGrid
+        :dataSet="filteredTechArray"
+        :class="{ activeTech: filter === 'web', block: filter !== 'web' }"
+      />
+
+      <CommonGrid
+        :dataSet="filteredTechArray"
+        :class="{
+          activeTech: filter === 'backend',
+          block: filter !== 'backend',
+        }"
+      />
     </div>
   </SectionContainer>
 </template>
 <style scoped>
 .active {
-  background: black;
-  color: white;
+  animation-name: color;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.activeTech {
+  animation-name: finished;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+}
+.block {
+  display: none;
+}
+@keyframes finished {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color {
+  0% {
+    background: white;
+    color: black;
+  }
+
+  100% {
+    background: black;
+    color: white;
+  }
 }
 </style>

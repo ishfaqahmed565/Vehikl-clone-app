@@ -97,7 +97,7 @@ import TeamSection from "@/components/TeamSection.vue";
         </div>
       </ContSec>
     </div>
-    <CenterDes class="bg-none lg:pt-0">
+    <CenterDes class="bg-none lg:pt-13">
       <template v-slot:header>What we do best </template>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 mt-20">
         <div

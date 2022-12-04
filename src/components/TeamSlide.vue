@@ -62,13 +62,14 @@ export default {
     :spaceBetween="30"
     :centeredSlides="true"
     :fade="true"
+    :loop="true"
     :navigation="true"
     :modules="modules"
-    class="mySwiper mt-20"
+    class="mySwiper"
   >
     <swiper-slide
       ><div
-        class="p grid lg:grid-cols-2 gap-5 text-white justify-items-center text-center"
+        class="p grid lg:grid-cols-2 gap-10 text-white justify-items-center text-center"
       >
         <div class="max-w-[250px] sm:max-w-[320px] relative">
           <div
@@ -81,7 +82,7 @@ export default {
           />
         </div>
         <div
-          class="flex flex-col gap-4 uppercase text-gray-200 text-start font-semibold text-sm sm:text-base"
+          class="flex flex-col gap-4 uppercase text-gray-200 text-start font-semibold text-sm sm:text-base max-w-[330px]"
         >
           <div class="quote">
             With an agile methodology, the team has produced more work with each
@@ -109,25 +110,5 @@ export default {
   .secSlide2 {
     display: flex;
   }
-}
-
-.swiper-slide {
-  text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 </style>
